@@ -72,10 +72,7 @@
                 <version>0.0.8</version>
                 <configuration>
                     <mainClass>com.banking.AppMain</mainClass>
-                    <modules>
-                        <module>javafx.controls</module>
-                        <module>javafx.fxml</module>
-                    </modules>
+
                 </configuration>
             </plugin>
 
