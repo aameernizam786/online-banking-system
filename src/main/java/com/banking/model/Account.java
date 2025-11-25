@@ -6,19 +6,14 @@ public class Account {
     private long accountId;
     private int userId;
     private String accountType;
-    private BigDecimal balance = BigDecimal.ZERO;
+    private BigDecimal balance;
 
     public long getAccountId() { return accountId; }
-    public void setAccountId(long accountId) { this.accountId = accountId; }
+    public void setAccountId(long id) { this.accountId = id; }
     public int getUserId() { return userId; }
-    public void setUserId(int userId) { this.userId = userId; }
+    public void setUserId(int id) { this.userId = id; }
     public String getAccountType() { return accountType; }
-    public void setAccountType(String accountType) { this.accountType = accountType; }
+    public void setAccountType(String t) { this.accountType = t; }
     public BigDecimal getBalance() { return balance; }
-    public void setBalance(BigDecimal balance) { this.balance = balance; }
-
-    @Override
-    public String toString() {
-        return "Acc #" + accountId + " | " + accountType + " | Balance: " + balance;
-    }
+    public void setBalance(BigDecimal b) { this.balance = b; }
 }
